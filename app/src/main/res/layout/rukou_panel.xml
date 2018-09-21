@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusableInTouchMode="true" 
+    android:padding="5dp" >
+    
+    
+        <EditText 
+		       android:layout_width="fill_parent"
+	           android:layout_height="50dip"
+	           android:layout_marginLeft="50dp"
+	           android:layout_marginRight="50dp"
+	           android:id="@+id/AcarCode"
+	           android:hint="车牌号"
+	           android:maxLength="7"
+	           />  
+          <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/channel_icon_bg"
+       android:id="@+id/AcarImgBox"
+        android:layout_below="@id/AcarCode"
+       
+>
+               <ImageView 
+                    android:layout_width="fill_parent"
+	                android:layout_height="196dp"
+	                android:id="@+id/AcarImg"
+	                android:layout_centerHorizontal="true"
+			        android:layout_centerVertical="true"
+			        android:scaleType="fitXY"
+			        android:src="@color/white"
+                   />
+                       <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#7f000000"
+		            android:gravity="center"
+		            android:layout_alignParentBottom="true"
+		            android:text="点击拍照" />
+               </RelativeLayout>
+               
+			  <Button
+		        android:id="@+id/addButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="45dp"
+		        android:layout_marginLeft="50dp"
+		        android:layout_marginRight="50dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="进场"
+		        style="@style/button_white"
+		         android:layout_below="@id/AcarImgBox"
+		        android:layout_marginTop="20dp"
+		        android:textStyle="bold"
+		          />
+           </RelativeLayout>          
+ 

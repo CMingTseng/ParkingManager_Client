@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">停车场管家</string>
+	<string name="app_name_version">微秘密1.0.0</string>
+    <string name="minuteago">分钟前</string>
+    <string name="hourago">小时前</string>
+    <string name="dayago">天前</string>
+    <string name="refresh_release">松开获取更多</string>
+    <string name="refresh_pull">下拉可以刷新</string>
+    <string name="refresh_lasttime">上次更新:</string>
+    <string name="tip_reload">重新加载</string>
+    <string name="tip_network_busy">连接服务器失败,请检查网络!</string>
+    <string name="tip_look_more">查看更多</string>
+    <string name="check_update_tips">正在检查更新......</string>
+    <string name="no_new_verson_tips">当前已是最新版本</string>
+    <string name="find_new_verson_tips">发现新版本</string>
+    <string name="at_now">刚刚</string> 
+    <string name="more">更多</string> 
+    <string name="system_setting">系统设置</string> 
+    <string name="user_account">个人账号</string>
+    <string name="title_setting_center">设置中心</string> 
+    <string name="title_fadeback">建议反馈</string>
+    <string name="title_publish">发布秘密</string>
+    <string name="title_user_login">用户登录</string>
+    <string name="title_user_register">用户注册</string>
+    <string name="clear_cache">清除缓存文件(/sdcard/micromimi)</string>
+    <string name="tip">提示</string>
+    <string name="clear_cache_tips">您将要清除缓存文件,缓存文件会减少网络下载次数，节省流量，并且提升图片显示速度。清除完成之后您再次浏览可能需要重新缓存这些文件,这样将会再次产生GPRS流量,您确定清除吗?</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="submit">提交</string>
+    <string name="find_new_version">发现新版本</string>
+    <string name="no_update_msg">暂无更新明细</string>
+    <string name="downloading">开始下载......</string>
+    <string name="new_version">最新版本: </string>
+    <string name="friend_hint">友情提示 </string>
+    <string name="at_version">当前版本: </string>
+    <string name="check_update">检查更新</string>
+    <string name="about_tips">关于信息</string>
+    <string name="now_download">下载更新</string>
+    <string name="fadeback_hint">说点儿什么吧^_^</string>
+    <string name="fadeBack_complte_tips">谢谢您的反馈^_^</string>
+    <string name="share_hint">填点内容再发布吧^_^</string>
+    <string name="share_complte_tips">谢谢您的分享^_^</string>
+    <string name="share">分享</string>
+    <string name="goback">返回</string>
+    <string name="exit">退出程序</string>
+    <string name="update_msg">更新信息</string>
+    <string name="version_msg">版本信息</string>
+    <string name="about_wpd">关于微秘密</string>
+ 
+    <string name="tips_app_explain">\u0020\u0020\u0020\u0020\u0020\u0020云停车场管理系统的研发源自于停车场管理30多年经验的基础积累，并结合国内相关行业的具体情况，因地制宜，在全体研发人员不断论证、严格测试下研制而成。\n\n \u0020\u0020\u0020\u0020 系列产品，本着质量作为前提，性能作为保证的原则，我们强烈建议有意选用本公司产品的新用户，将本公司产品与同行同类产品进行比较性测试后再做选择，自信源于**系统技术人员的长期努力，来源于我们长期对产品质量严格要求。您的选择了我们，我们用更高的价值产品来回报，我们一直在努力，没有最好，只有更好！</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+<color name="orange">#f89636</color>
+<color name="white">#ffffff</color>
+<color name="blue">#43B7FF</color>
+<color name="green">#A5CD4E</color>
+<color name="gray">#ff789089</color> 
+<color name="black">#000000</color>
+<color name="red">#E20C0C</color>
+<color name="red_press">#E20E03</color>
+<color name="red_n">#B40B02</color>
+
+<color name="light_white">#c8ffffff</color>
+<color name="window_bg">#ffeef1f3</color>
+<color name="transparent">#00000000</color>
+
+</resources>

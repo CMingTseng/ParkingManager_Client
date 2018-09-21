@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg" >
+
+     <include android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:id="@+id/HEADER"
+         layout="@layout/global_top_header" />
+
+         <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="200dp"
+			        android:background="@drawable/channel_icon_bg"
+			        android:id="@+id/rukouCarImgBox"
+			        android:layout_below="@id/HEADER"
+			        android:layout_marginTop="10dp"
+              >
+              <ImageView 
+                    android:layout_width="fill_parent"
+	                android:layout_height="200dp"
+	                android:id="@+id/rukouCarImg"
+	                android:src="@color/white"
+              />
+               <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#7f000000"
+		            android:gravity="center"
+		            android:layout_alignParentBottom="true"
+		            android:text="进场图片"/>
+               </RelativeLayout>
+			   
+			    <RelativeLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="200dp"
+			        android:background="@drawable/channel_icon_bg"
+			        android:id="@+id/chukouCarImgBox"
+			        android:layout_below="@id/rukouCarImgBox"
+			        android:layout_marginTop="10dp"
+              >
+                  <ImageView 
+                    android:layout_width="fill_parent"
+	                android:layout_height="200dp"
+	                android:src="@color/white"
+	                android:id="@+id/chukouCarImg"
+              />
+                <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="40dp"
+		            android:background="#7f000000"
+		            android:gravity="center"
+		            android:layout_alignParentBottom="true"
+		            android:text="出场图片"/>
+               </RelativeLayout>
+</RelativeLayout>

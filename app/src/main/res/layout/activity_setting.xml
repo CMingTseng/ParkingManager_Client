@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg" >
+
+     <include android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:id="@+id/HEADER"
+         layout="@layout/global_top_header" />
+     <ScrollView
+          android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/HEADER"
+           android:orientation="vertical"
+          >
+    
+     <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:focusableInTouchMode="true" 
+         >
+    <TextView         android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:textColor="@color/gray"
+                      android:textSize="14sp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:text="用户设置"
+     /> 
+      <Button           android:layout_height="45dp"
+                      android:layout_width="fill_parent"
+                      android:id="@+id/password_item"
+                      android:textColor="@color/black"
+                      android:gravity="center"
+                      android:textSize="14sp"
+                      android:background="@drawable/listview_selector"
+                      android:layout_marginLeft="5dp"
+		              android:layout_marginRight="5dp"
+		              android:layout_marginBottom="10dp"
+		              android:text="修改密码"
+     />
+     <TextView         android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:textColor="@color/gray"
+                      android:textSize="14sp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:text="功能设置"
+     /> 
+     
+    <RelativeLayout 
+         android:layout_height="45dp"
+         android:layout_width="fill_parent"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="-0.5dp"
+		  android:layout_marginRight="5dp"
+		  android:background="@drawable/listview_selector"
+		  android:clickable="true"
+         >
+          <TextView   android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/black"
+                      android:layout_centerVertical="true"
+                      android:gravity="left"
+                      android:textSize="14sp"
+                      android:text="车牌前缀"
+                />
+         
+	         <EditText
+	          android:layout_width="80dp"
+	           android:layout_height="45dp"
+	           android:id="@+id/prefix"
+	           android:layout_marginLeft="80dp"
+	           android:layout_centerVertical="true"
+	           android:maxLength="2"
+	         />
+	     <TextView
+	          android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:textColor="@color/blue"
+	           android:layout_marginLeft="180dp"
+	           android:layout_centerVertical="true"
+	         />
+	    <Button
+	        android:id="@+id/SaveButton"
+	        android:layout_width="65dp"
+	        android:layout_height="35dp"
+	        android:text="保存"
+	        style="@style/button_white"
+	        android:textStyle="bold"
+	        android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+	          />
+     </RelativeLayout>
+     
+    
+    
+    
+    
+    
+    
+    
+    
+     <RelativeLayout 
+         android:layout_height="45dp"
+         android:layout_width="fill_parent"
+         android:clickable="true"
+          android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:background="@drawable/listview_selector"
+         >
+          <TextView   android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/black"
+                      android:layout_centerVertical="true"
+                      android:gravity="left"
+                      android:textSize="14sp"
+                      android:text="2G/3G网络开关"
+                />
+         
+         <CheckBox
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/netSwitch"
+		              android:clickable="true"
+		              android:button="@null"
+		              android:background="@drawable/setting_checkbox"
+		              android:layout_centerVertical="true"
+		              android:layout_alignParentRight="true"
+		              android:layout_marginRight="10dp"
+		               
+                      />
+     </RelativeLayout>
+     
+      <RelativeLayout 
+         android:layout_height="45dp"
+         android:layout_width="fill_parent"
+          android:layout_marginLeft="5dp"
+          android:clickable="true"
+		        android:layout_marginRight="5dp"
+		        android:layout_marginTop="-0.5dp"
+		        android:background="@drawable/listview_selector"
+         >
+          <TextView   android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/black"
+                      android:layout_centerVertical="true"
+                      android:gravity="left"
+                      android:textSize="14sp"
+                      android:text="WIFI开关"
+                />
+         
+         <CheckBox    android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/wifiSwitch"
+		              android:clickable="true"
+		              android:button="@null"
+		              android:background="@drawable/setting_checkbox"
+		              android:layout_centerVertical="true"
+		              android:layout_alignParentRight="true"
+		              android:layout_marginRight="10dp"
+                      />
+     </RelativeLayout>
+      <RelativeLayout 
+         android:layout_height="45dp"
+         android:layout_width="fill_parent"
+          android:layout_marginLeft="5dp"
+           android:clickable="true"
+           android:layout_marginTop="-0.5dp"
+		        android:layout_marginRight="5dp"
+		        android:background="@drawable/listview_selector"
+         >
+          <TextView   android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/black"
+                      android:layout_centerVertical="true"
+                      android:gravity="left"
+                      android:textSize="14sp"
+                      android:text="蓝牙开关"
+                />
+         
+         <CheckBox    android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/blueSwitch"
+		              android:clickable="true"
+		              android:button="@null"
+		              android:background="@drawable/setting_checkbox"
+		              android:layout_centerVertical="true"
+		              android:layout_alignParentRight="true"
+		              android:layout_marginRight="10dp"
+                      />
+     </RelativeLayout>
+     <RelativeLayout 
+         android:layout_height="45dp"
+         android:layout_width="fill_parent"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="-0.5dp"
+          android:clickable="true"
+		        android:layout_marginRight="5dp"
+		        android:background="@drawable/listview_selector"
+         >
+          <TextView   android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/black"
+                      android:layout_centerVertical="true"
+                      android:gravity="left"
+                      android:textSize="14sp"
+                      android:text="同步图片"
+                />
+         
+         <CheckBox    android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/syncImgSwitch"
+		              android:clickable="true"
+		              android:button="@null"
+		              android:background="@drawable/setting_checkbox"
+		              android:layout_centerVertical="true"
+		              android:layout_alignParentRight="true"
+		              android:layout_marginRight="10dp"
+                      />
+     </RelativeLayout>
+     
+     <RelativeLayout 
+         android:layout_height="45dp"
+         android:layout_width="fill_parent"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="-0.5dp"
+		  android:layout_marginRight="5dp"
+		  android:background="@drawable/listview_selector"
+		  android:clickable="true"
+         >
+          <TextView   android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/black"
+                      android:layout_centerVertical="true"
+                      android:gravity="left"
+                      android:textSize="14sp"
+                      android:text="图片保留"
+                />
+         
+	         <EditText
+	          android:layout_width="80dp"
+	           android:layout_height="45dp"
+	           android:id="@+id/day"
+	           android:layout_marginLeft="80dp"
+	           android:layout_centerVertical="true"
+	           android:numeric="integer" 
+	           android:maxLength="4"
+	         />
+	     <TextView
+	          android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:text="天"
+	           android:textColor="@color/blue"
+	           android:layout_marginLeft="180dp"
+	           android:layout_centerVertical="true"
+	         />
+	    <Button
+	        android:id="@+id/SaveDayButton"
+	        android:layout_width="65dp"
+	        android:layout_height="35dp"
+	        android:text="保存"
+	        style="@style/button_white"
+	        android:textStyle="bold"
+	        android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+	          />
+     </RelativeLayout>
+     
+    <Button           android:layout_height="45dp"
+                      android:layout_width="fill_parent"
+                      android:id="@+id/about_item"
+                      android:textColor="@color/black"
+                      android:gravity="center"
+                      android:textSize="14sp"
+                      android:background="@drawable/listview_selector"
+                      android:layout_marginLeft="5dp"
+		              android:layout_marginRight="5dp"
+		              android:layout_marginBottom="10dp"
+		              android:text="关于云车场v1.0.0A9"
+     />
+    </LinearLayout>
+  </ScrollView>
+   
+</RelativeLayout>

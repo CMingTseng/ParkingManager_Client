@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg" 
+    android:orientation="vertical" >
+ <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+      <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/common_titlebar"
+     >
+     
+       <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+       />
+        <TextView
+            android:id="@+id/portal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/account"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+       />
+     </RelativeLayout>
+    <ImageView
+        android:id="@+id/colorfulLine"
+        android:layout_width="fill_parent"
+        android:layout_height="3.3299866dip"
+        android:layout_below="@id/topbar"
+        android:scaleType="fitXY"
+        android:src="@drawable/colorful_line" />
+	</RelativeLayout>
+ 
+    <LinearLayout  
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="50dp"
+	    android:id="@+id/controlPanel"
+	    android:background="@drawable/toptabbar_select"
+      >
+     <TextView
+        android:id="@+id/rukou"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="进场"
+        android:background="@drawable/toptabbar_select_active"
+        android:layout_weight="3"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_gravity="center"
+        android:ems="4"
+          />
+        <TextView
+        android:id="@+id/chukou"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:layout_weight="3"
+        android:text="出场"
+        android:textStyle="bold"
+         android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="4"
+          />
+         
+       <TextView
+        android:id="@+id/record"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_weight="3"
+        android:text="本地记录"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="4"
+        android:textStyle="bold"
+        
+          />
+ 
+   </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/MviewPaper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/controlPanel"
+        >
+      <include android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:id="@+id/rukouPanel"
+         layout="@layout/rukou_panel" />
+      
+       <include android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:id="@+id/chukouPanel"
+         layout="@layout/chukou_panel" />
+            
+       <include android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:id="@+id/recordPanel"
+         layout="@layout/record_panel" /> 
+ 
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

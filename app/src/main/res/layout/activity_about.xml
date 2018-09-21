@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_bg" >
+
+     <include android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:id="@+id/HEADER"
+         layout="@layout/global_top_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/HEADER"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+              <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/logo" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="30.0dip"
+               
+                android:text="关于云车场"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+          
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tips_app_explain"
+                    android:textColor="@android:color/black"
+                     android:paddingLeft="5dp"
+                     android:paddingTop="5dp"
+                    android:background="@drawable/item_bg"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            
+                   <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="电 话：********"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/item_bg"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                   <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="网 址：http://www.******.com"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/item_bg"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                   
+                   <TextView 
+	       android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:textColor="@color/gray"
+            android:layout_marginTop="30dp"
+           android:textSize="12sp"
+           android:text="**科技公司版权所有,版本号 1.0.0A9"
+	      />
+                   <TextView 
+	           android:id="@+id/Copyright"
+	       android:layout_width="fill_parent"
+	       android:gravity="center"
+           android:layout_height="wrap_content"
+           android:textColor="@color/gray"
+           android:textSize="12sp"
+           android:text="Copyright 2013 All Right Reserved"
+	      />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
